@@ -3,7 +3,9 @@ pets-safety-alerts-famousai
 
 ## Setup
 
-This project uses the `jason` package for JSON parsing with template support.
+This project uses the `jason` package for JSON parsing.
+
+**Security Note**: The `jason` package uses `new Function()` internally for parsing. Only use it with trusted JSON data. For untrusted data, consider using the built-in `JSON.parse()` instead.
 
 ### Installation
 
